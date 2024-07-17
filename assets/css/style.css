@@ -60,7 +60,7 @@ header a {
 }
 
 .active {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #3a3a3a;
 }
 
 /*Navbar styles with dropdown toggle*/
@@ -85,7 +85,7 @@ nav {
 }
 
 .nav-toggle-label {
-    font-size: 2em;
+    font-size: 2rem;
 }
 
 
@@ -94,8 +94,10 @@ main {
     
     /*Make main element take up any surplus space to push footer down*/
     flex: 1 0 auto;
-    margin-top: 47px
+    margin-top: 47px;
 }
+
+
 
 /*Hero Section*/
 #hero {
@@ -123,15 +125,37 @@ main {
     color: #ffffff;
 }
 
+
+/*Reasons section with divs*/
 #reasons {
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
+    margin: 20px auto;
+
+}
+
+#reasons h2 {
+    font-size: 280%;
     margin-bottom: 20px;
+    text-align: center;
+}
+
+
+
+#benefits-physical > div, #benefits-mental > div {
+
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+
+#benefits  p {
+    padding: 0 20px;
     
 }
 
+#benefits hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
 /*Footer*/
 #social-networks {
     text-align: center;
@@ -195,6 +219,6 @@ main {
 /*Large devices (laptops and desktops, 992px and up)*/
 @media screen and (min-width: 992px) {
     #menu a:hover {
-        border-bottom: 1px solid #3a3a3a
+        border-bottom: 1px solid #3a3a3a;
     }
 }
